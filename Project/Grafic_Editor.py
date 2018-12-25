@@ -1,10 +1,10 @@
 import sys
-from PyQt5.QtWidgets import QWidget, QApplication, QPushButton
+from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QInputDialog
 from PyQt5 import uic
 
 
-class Grafic_Editor(QWidget):
+class Grafic_Editor(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('дизайн.ui', self)
@@ -12,7 +12,6 @@ class Grafic_Editor(QWidget):
         self.base()
 
     def base(self):
-        self.lbl.
         self.btn_new.clicked.connect(self.new)
         self.btn_roted_l.clicked.connect(self.roted_l)
         self.btn_roted_r.clicked.connect(self.roted_r)
@@ -35,4 +34,5 @@ class Grafic_Editor(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Grafic_Editor()
+    ex.show()
     sys.exit(app.exec_())
