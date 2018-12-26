@@ -3,14 +3,13 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QInputDialog
 from PyQt5.QtGui import QPixmap
 from PyQt5 import uic
-import os
+import os.path
 from PIL import Image as I
 
 
 class Error(QWidget):
-    def __init__(self, message, i_p):
+    def __init__(self, message):
         super().__init__()
-        self.i_p = i_p
         self.setGeometry(800, 470, 230, 80)
         self.setWindowTitle('ERROR')
 
@@ -20,7 +19,7 @@ class Error(QWidget):
         self.txt.move(5, 5)
 
 
-class Grafic_Editor(QMainWindow):
+class Photo_Editor(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('дизайн.ui', self)
@@ -44,14 +43,14 @@ class Grafic_Editor(QMainWindow):
         i, okBtnPressed = QInputDialog.getText(self, "Введите название картинки",
                                                "Картинка")
         if okBtnPressed:
-            if not (os.path.isfile(self.name)):
-                self.error1 = Error('Указанный файл не существует', self)
+            if not (os.path.isfile(i)):
+                self.error1 = Error('Указанный файл не существует')
                 self.error1.show()
             else:
                 self.im = I.open(i)
                 x, y = self.im.size
                 if 1310 < x or 920 < y:
-                    self.error2 = Error('Неверный размер картинки', self)
+                    self.error2 = Error('Неверный размер картинки')
                     self.error2.show()
                 else:
                     self.lbl.resize(x, y)
@@ -64,6 +63,6 @@ class Grafic_Editor(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = Grafic_Editor()
+    ex = Photo_Editor()
     ex.show()
     sys.exit(app.exec_())
