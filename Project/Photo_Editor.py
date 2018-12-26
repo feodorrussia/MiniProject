@@ -71,12 +71,14 @@ class Editor_tools:
                 self.base.lbl.setPixmap(QPixmap(self.name))
 
     def roted_l(self):
-        self.im.transpose(I.ROTATE_270).save(self.name)
-        self.exit_picture(self.name)
+        if self.name != 'init.jpg':
+            self.im.transpose(I.ROTATE_270).save(self.name)
+            self.exit_picture(self.name)
 
     def roted_r(self):
-        self.im.transpose(I.ROTATE_90).save(self.name)
-        self.exit_picture(self.name)
+        if self.name != 'init.jpg':
+            self.im.transpose(I.ROTATE_90).save(self.name)
+            self.exit_picture(self.name)
 
 
 if __name__ == '__main__':
