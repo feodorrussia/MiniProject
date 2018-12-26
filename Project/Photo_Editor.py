@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import *
-from PyQt5.QtWidgets import QInputDialog
+from PyQt5.QtWidgets import QInputDialog, QColorDialog
 from PyQt5.QtGui import QPixmap
 from PyQt5 import uic
 import os.path
@@ -34,8 +34,8 @@ class Photo_Editor(QMainWindow):
         self.btn_sepia.clicked.connect(self.tools.sepia)
         self.btn_black.clicked.connect(self.tools.black)
         self.btn_negativ.clicked.connect(self.tools.negativ)
-        '''self.btn_frame.clicked.connect(self.tools.frame)
-        self.btn_cut.clicked.connect(self.tools.cut)'''
+        self.btn_frame.clicked.connect(self.tools.frame)
+        '''self.btn_cut.clicked.connect(self.tools.cut)'''
 
 
 class Editor_tools:
@@ -91,7 +91,6 @@ class Editor_tools:
             self.im.save(self.name)
             self.exit_picture(self.name)
 
-
     def negativ(self):
         if self.name != 'init.jpg':
             pixels = self.im.load()
@@ -111,6 +110,22 @@ class Editor_tools:
                     c = (r + g + b) // 3
                     pixels[i, j] = c, c, c
             self.im.save(self.name)
+            self.exit_picture(self.name)
+
+    def frame(self):
+        if self.name != 'init.jpg':
+            color = QColorDialog.getColor()
+            fr = self.base.wheight.value()
+            im_n = I.new("RGB", (self.x + fr * 2, self.y + fr * 2), color.name())
+            pixels = self.im.load()
+            pixels1 = im_n.load()
+            for i in range(self.x):
+                for j in range(self.y):
+                    pixels1[i + fr, j + fr] = pixels[i, j]
+            self.im = im_n
+            self.x += fr * 2
+            self.y += fr * 2
+            im_n.save(self.name)
             self.exit_picture(self.name)
 
 
