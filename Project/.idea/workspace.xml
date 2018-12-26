@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa350ce-3ac1-426b-a700-34a712228688" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Photo_Editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Photo_Editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/дизайн.ui" beforeDir="false" afterPath="$PROJECT_DIR$/дизайн.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+            <state relative-caret-position="235">
+              <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#1420#1616#0" />
+                <element signature="e#1621#2290#0" />
+                <element signature="e#2298#2425#0" />
+                <element signature="e#2415#2540#0" />
+                <element signature="e#2656#2919#0" />
+                <element signature="e#3053#3362#0" />
+                <element signature="e#3404#3994#0" />
               </folding>
             </state>
           </provider>
@@ -29,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/project_1/Grafic_editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
+            <state relative-caret-position="551">
               <caret line="199" column="30" lean-forward="true" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -86,7 +92,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/project_1/Grafic_editor.py" />
+    <property name="last_opened_file_path" value="C:/питон/sepia.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -166,7 +172,7 @@
     </entry>
     <entry file="file://C:/project_1/Grafic_editor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
+        <state relative-caret-position="551">
           <caret line="199" column="30" lean-forward="true" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -174,12 +180,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
+    <entry file="file://C:/питон/untitled-3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/питон/untitled-212.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/питон/untitled-21.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/питон/untitled-2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/untitled-15.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="4" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/untitled-14.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/untitled-13.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/untitled-12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/untitled-11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/питон/sepia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1420#1616#0" />
+            <element signature="e#1621#2290#0" />
+            <element signature="e#2298#2425#0" />
+            <element signature="e#2415#2540#0" />
+            <element signature="e#2656#2919#0" />
+            <element signature="e#3053#3362#0" />
+            <element signature="e#3404#3994#0" />
           </folding>
         </state>
       </provider>

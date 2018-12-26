@@ -31,11 +31,11 @@ class Photo_Editor(QMainWindow):
         self.btn_new.clicked.connect(self.tools.new_picture)
         self.btn_roted_l.clicked.connect(self.tools.roted_l)
         self.btn_roted_r.clicked.connect(self.tools.roted_r)
-        '''self.btn_sepia.clicked.connect(self.sepia)
-        self.btn_black.clicked.connect(self.black)
-        self.btn_negativ.clicked.connect(self.negativ)
-        self.btn_frame.clicked.connect(self.frame)
-        self.btn_cut.clicked.connect(self.cut)'''
+        self.btn_sepia.clicked.connect(self.tools.sepia)
+        self.btn_black.clicked.connect(self.tools.black)
+        self.btn_negativ.clicked.connect(self.tools.negativ)
+        '''self.btn_frame.clicked.connect(self.tools.frame)
+        self.btn_cut.clicked.connect(self.tools.cut)'''
 
 
 class Editor_tools:
@@ -78,6 +78,39 @@ class Editor_tools:
     def roted_r(self):
         if self.name != 'init.jpg':
             self.im.transpose(I.ROTATE_90).save(self.name)
+            self.exit_picture(self.name)
+
+    def sepia(self):
+        if self.name != 'init.jpg':
+            pixels = self.im.load()
+            for i in range(self.x):
+                for j in range(self.y):
+                    r, g, b = pixels[i, j]
+                    o = (r + g + b) // 3
+                    pixels[i, j] = int(o + 48), int(o + 32), int(o)
+            self.im.save(self.name)
+            self.exit_picture(self.name)
+
+
+    def negativ(self):
+        if self.name != 'init.jpg':
+            pixels = self.im.load()
+            for i in range(self.x):
+                for j in range(self.y):
+                    r, g, b = pixels[i, j]
+                    pixels[i, j] = 255 - r, 255 - g, 255 - b
+            self.im.save(self.name)
+            self.exit_picture(self.name)
+
+    def black(self):
+        if self.name != 'init.jpg':
+            pixels = self.im.load()
+            for i in range(self.x):
+                for j in range(self.y):
+                    r, g, b = pixels[i, j]
+                    c = (r + g + b) // 3
+                    pixels[i, j] = c, c, c
+            self.im.save(self.name)
             self.exit_picture(self.name)
 
 
