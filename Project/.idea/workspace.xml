@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa350ce-3ac1-426b-a700-34a712228688" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/1(1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Photo_Editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Photo_Editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/дизайн.ui" beforeDir="false" afterPath="$PROJECT_DIR$/дизайн.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-913">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="191">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#220#484#0" />
+                <element signature="e#524#1407#0" />
+                <element signature="e#552#691#0" />
+                <element signature="e#721#1369#0" />
+                <element signature="e#1468#6407#0" />
                 <element signature="e#1554#2252#0" />
                 <element signature="e#1464#1659#0" />
                 <element signature="e#1700#2309#0" />
@@ -30,6 +33,7 @@
                 <element signature="e#3062#3382#0" />
                 <element signature="e#3413#3756#0" />
                 <element signature="e#3787#4347#0" />
+                <element signature="e#5874#6599#0" />
               </folding>
             </state>
           </provider>
@@ -313,10 +317,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-913">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="191">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#220#484#0" />
+            <element signature="e#524#1407#0" />
+            <element signature="e#552#691#0" />
+            <element signature="e#721#1369#0" />
+            <element signature="e#1468#6407#0" />
             <element signature="e#1554#2252#0" />
             <element signature="e#1464#1659#0" />
             <element signature="e#1700#2309#0" />
@@ -326,6 +334,7 @@
             <element signature="e#3062#3382#0" />
             <element signature="e#3413#3756#0" />
             <element signature="e#3787#4347#0" />
+            <element signature="e#5874#6599#0" />
           </folding>
         </state>
       </provider>
