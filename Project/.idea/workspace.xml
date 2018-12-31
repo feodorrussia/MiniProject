@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fa350ce-3ac1-426b-a700-34a712228688" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Photo_Editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Photo_Editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/дизайн.ui" beforeDir="false" afterPath="$PROJECT_DIR$/дизайн.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +15,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state relative-caret-position="459">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#1554#2252#0" />
-                <element signature="e#2401#2621#0" />
+                <element signature="e#2334#2714#0" />
                 <element signature="e#1464#1659#0" />
                 <element signature="e#1700#2309#0" />
                 <element signature="e#2342#2470#0" />
@@ -147,7 +146,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
@@ -293,12 +292,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state relative-caret-position="459">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#1554#2252#0" />
-            <element signature="e#2401#2621#0" />
+            <element signature="e#2334#2714#0" />
             <element signature="e#1464#1659#0" />
             <element signature="e#1700#2309#0" />
             <element signature="e#2342#2470#0" />

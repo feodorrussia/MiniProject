@@ -30,7 +30,6 @@ class Photo_Editor(QMainWindow):
         self.lbl.setPixmap(QPixmap(self.tools.name))
         self.btn_new.clicked.connect(self.tools.new_picture)
         self.btn_copy.clicked.connect(self.tools.copy_picture)
-        self.btn_rename.clicked.connect(self.tools.rename_picture)
         self.btn_roted_l.clicked.connect(self.tools.roted_l)
         self.btn_roted_r.clicked.connect(self.tools.roted_r)
         self.btn_sepia.clicked.connect(self.tools.sepia)
@@ -65,14 +64,6 @@ class Editor_tools:
             else:
                 self.error1 = Error('Указанный файл уже существует')
                 self.error1.show()
-
-    def rename_picture(self):
-        i, okBtnPressed = QInputDialog.getText(self.base,
-                                               "Введите новое название картинки",
-                                               "Новое название")
-        if okBtnPressed:
-            self.im.save(i)
-            self.exit_picture(i)
 
     def new_picture(self):
         i, okBtnPressed = QInputDialog.getText(self.base, "Введите название картинки",

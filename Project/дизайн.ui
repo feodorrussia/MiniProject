@@ -3230,7 +3230,7 @@
    <widget class="QPushButton" name="btn_copy">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>210</x>
       <y>140</y>
       <width>95</width>
       <height>56</height>
@@ -3260,40 +3260,6 @@
     <property name="text">
      <string>Создать 
  копию</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_rename">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>160</y>
-      <width>120</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>95</width>
-      <height>28</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>16777215</width>
-      <height>28</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <family>Times New Roman</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>Переименовать</string>
     </property>
    </widget>
    <widget class="QWidget" name="">
