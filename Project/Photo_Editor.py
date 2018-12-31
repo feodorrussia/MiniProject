@@ -37,7 +37,6 @@ class Photo_Editor(QMainWindow):
         self.btn_black.clicked.connect(self.tools.black)
         self.btn_negativ.clicked.connect(self.tools.negativ)
         self.btn_frame.clicked.connect(self.tools.frame)
-        '''self.btn_cut.clicked.connect(self.tools.cut)'''
 
 
 class Editor_tools:
@@ -68,7 +67,8 @@ class Editor_tools:
                 self.error1.show()
 
     def rename_picture(self):
-        i, okBtnPressed = QInputDialog.getText(self.base, "Введите новое название картинки",
+        i, okBtnPressed = QInputDialog.getText(self.base,
+                                               "Введите новое название картинки",
                                                "Новое название")
         if okBtnPressed:
             self.im.save(i)
@@ -164,9 +164,6 @@ class Editor_tools:
             self.y += fr * 2
             im_n.save(self.name)
             self.exit_picture(self.name)
-
-    '''def cut(self):'''
-
 
 
 if __name__ == '__main__':
