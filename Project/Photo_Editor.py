@@ -30,6 +30,9 @@ class Photo_Editor(QMainWindow):
         self.lbl.setPixmap(QPixmap(self.tools.name))
         self.btn_new.clicked.connect(self.tools.new_picture)
         self.btn_copy.clicked.connect(self.tools.copy_picture)
+        self.rec_r.clicked.connect(self.tools.recoloring_picture)
+        self.rec_g.clicked.connect(self.tools.recoloring_picture)
+        self.rec_b.clicked.connect(self.tools.recoloring_picture)
         self.btn_roted_l.clicked.connect(self.tools.roted_l)
         self.btn_roted_r.clicked.connect(self.tools.roted_r)
         self.btn_sepia.clicked.connect(self.tools.sepia)
@@ -45,6 +48,9 @@ class Editor_tools:
         self.y = y
         self.base = base
         self.copy_ind = 1
+        self.old_proc_r = 100
+        self.old_proc_g = 100
+        self.old_proc_b = 100
         self.im = I.open(self.name)
 
     def copy_picture(self):
@@ -154,6 +160,23 @@ class Editor_tools:
             self.x += fr * 2
             self.y += fr * 2
             im_n.save(self.name)
+            self.exit_picture(self.name)
+
+    def recoloring_picture(self):
+        print(1)
+        if self.name != 'init.jpg':
+            pixels = self.im.load()
+            for i in range(self.x):
+                for j in range(self.y):
+                    r, g, b = pixels[i, j]
+                    d_r = self.base.proc_r_sp.value() / self.old_proc_r
+                    d_g = self.base.proc_g_sp.value() / self.old_proc_g
+                    d_b = self.base.proc_b_sp.value() / self.old_proc_b
+                    pixels[i, j] = int(r * d_r), int(g * d_g), int(b * d_b)
+            self.old_proc_r = self.base.proc_r_sp.value()
+            self.old_proc_g = self.base.proc_g_sp.value()
+            self.old_proc_b = self.base.proc_b_sp.value()
+            self.im.save(self.name)
             self.exit_picture(self.name)
 
 
