@@ -67,7 +67,7 @@ class Editor_tools:
                 self.error1 = Error('Указанный файл уже существует')
                 self.error1.show()
 
-    def rename(self):
+    def rename_picture(self):
         i, okBtnPressed = QInputDialog.getText(self.base, "Введите новое название картинки",
                                                "Новое название")
         if okBtnPressed:
@@ -164,6 +164,9 @@ class Editor_tools:
             self.y += fr * 2
             im_n.save(self.name)
             self.exit_picture(self.name)
+
+    '''def cut(self):'''
+
 
 
 if __name__ == '__main__':
