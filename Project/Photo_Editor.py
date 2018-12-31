@@ -29,6 +29,7 @@ class Photo_Editor(QMainWindow):
     def base(self):
         self.lbl.setPixmap(QPixmap(self.tools.name))
         self.btn_new.clicked.connect(self.tools.new_picture)
+        self.btn_copy.clicked.connect(self.tools.copy_picture)
         self.btn_roted_l.clicked.connect(self.tools.roted_l)
         self.btn_roted_r.clicked.connect(self.tools.roted_r)
         self.btn_sepia.clicked.connect(self.tools.sepia)
@@ -44,12 +45,32 @@ class Editor_tools:
         self.x = x
         self.y = y
         self.base = base
+        self.copy_ind = 1
         self.im = I.open(self.name)
+
+    def copy_picture(self):
+        i, okBtnPressed = QInputDialog.getText(self.base, "Введите название картинки",
+                                               "Копия")
+        if okBtnPressed:
+            if not (os.path.isfile(i)):
+                if i == '':
+                    str = '({}).'.format(self.copy_ind)
+                    if os.path.isfile(
+                            str.join(self.name.split('.'))):
+                        self.copy_ind += 1
+                        str = '({}).'.format(self.copy_ind)
+                    i = str.join(self.name.split('.'))
+                self.im.save(i)
+                self.exit_picture(i)
+            else:
+                self.error1 = Error('Указанный файл уже существует')
+                self.error1.show()
 
     def new_picture(self):
         i, okBtnPressed = QInputDialog.getText(self.base, "Введите название картинки",
                                                "Картинка")
         if okBtnPressed:
+            self.copy_ind = 1
             self.exit_picture(i)
 
     def exit_picture(self, i):
@@ -64,7 +85,7 @@ class Editor_tools:
                 self.error2.show()
             else:
                 self.base.lbl.resize(x, y)
-                self.base.lbl.move(570 + 655 - x // 2, 460 - y // 2)
+                self.base.lbl.move(570 + 655 - x // 2, 490 - y // 2)
                 self.name = i
                 self.x = x
                 self.y = y
@@ -72,13 +93,21 @@ class Editor_tools:
 
     def roted_l(self):
         if self.name != 'init.jpg':
-            self.im.transpose(I.ROTATE_270).save(self.name)
-            self.exit_picture(self.name)
+            if 1310 < self.y or 920 < self.x:
+                self.error2 = Error('Невозможно перевернуть картинку')
+                self.error2.show()
+            else:
+                self.im.transpose(I.ROTATE_270).save(self.name)
+                self.exit_picture(self.name)
 
     def roted_r(self):
         if self.name != 'init.jpg':
-            self.im.transpose(I.ROTATE_90).save(self.name)
-            self.exit_picture(self.name)
+            if 1310 < self.y or 920 < self.x:
+                self.error2 = Error('Невозможно перевернуть картинку')
+                self.error2.show()
+            else:
+                self.im.transpose(I.ROTATE_90).save(self.name)
+                self.exit_picture(self.name)
 
     def sepia(self):
         if self.name != 'init.jpg':
