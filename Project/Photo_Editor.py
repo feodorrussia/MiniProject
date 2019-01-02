@@ -36,7 +36,7 @@ class Photo_Editor(QMainWindow):
         self.btn_roted_r.clicked.connect(self.tools.roted_l)
         self.btn_sepia.clicked.connect(self.tools.sepia)
         self.btn_black.clicked.connect(self.tools.black)
-        self.btn_negativ.clicked.connect(self.tools.negativ)
+        self.btn_negativ.clicked.connect(self.tools.negative())
         self.btn_frame.clicked.connect(self.tools.frame)
 
 
@@ -87,7 +87,8 @@ class Editor_tools:
             self.im = I.open(i)
             x, y = self.im.size
             if 1310 < x or 920 < y:
-                self.error2 = Error('Неверный размер картинки')
+                self.error2 = Error(
+                    'Неверный размер картинки\nмаксимальный размер 1310x920')
                 self.error2.show()
             else:
                 self.base.lbl.resize(x, y)
@@ -100,7 +101,8 @@ class Editor_tools:
     def roted_l(self):
         if self.name != 'init.jpg':
             if 1310 < self.y or 920 < self.x:
-                self.error2 = Error('Невозможно перевернуть картинку')
+                self.error2 = Error(
+                    'Невозможно перевернуть картинку\nмаксимальный размер 1310x920')
                 self.error2.show()
             else:
                 self.im.transpose(I.ROTATE_270).save(self.name)
@@ -109,7 +111,8 @@ class Editor_tools:
     def roted_r(self):
         if self.name != 'init.jpg':
             if 1310 < self.y or 920 < self.x:
-                self.error2 = Error('Невозможно перевернуть картинку')
+                self.error2 = Error(
+                    'Невозможно перевернуть картинку\nмаксимальный размер 1310x920')
                 self.error2.show()
             else:
                 self.im.transpose(I.ROTATE_90).save(self.name)
@@ -126,7 +129,7 @@ class Editor_tools:
             self.im.save(self.name)
             self.exit_picture(self.name)
 
-    def negativ(self):
+    def negative(self):
         if self.name != 'init.jpg':
             pixels = self.im.load()
             for i in range(self.x):
