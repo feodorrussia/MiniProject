@@ -12,7 +12,6 @@ class Error(QWidget):
         super().__init__()
         self.setGeometry(800, 470, 230, 80)
         self.setWindowTitle('ERROR')
-
         self.txt = QLabel(self)
         self.txt.setText(message)
         self.txt.resize(250, 40)
@@ -54,7 +53,8 @@ class Editor_tools:
         self.im = I.open(self.name)
 
     def copy_picture(self):
-        i, okBtnPressed = QInputDialog.getText(self.base, "Введите название картинки",
+        i, okBtnPressed = QInputDialog.getText(self.base,
+                                               "Введите название картинки",
                                                "Копия")
         if okBtnPressed:
             if not (os.path.isfile(i)):
@@ -72,7 +72,8 @@ class Editor_tools:
                 self.error1.show()
 
     def new_picture(self):
-        i, okBtnPressed = QInputDialog.getText(self.base, "Введите название картинки",
+        i, okBtnPressed = QInputDialog.getText(self.base,
+                                               "Введите название картинки",
                                                "Картинка")
         if okBtnPressed:
             self.copy_ind = 1
@@ -150,7 +151,8 @@ class Editor_tools:
         if self.name != 'init.jpg':
             color = QColorDialog.getColor()
             fr = self.base.wheight.value()
-            im_n = I.new("RGB", (self.x + fr * 2, self.y + fr * 2), color.name())
+            im_n = I.new("RGB", (self.x + fr * 2, self.y + fr * 2),
+                         color.name())
             pixels = self.im.load()
             pixels1 = im_n.load()
             for i in range(self.x):
@@ -163,7 +165,6 @@ class Editor_tools:
             self.exit_picture(self.name)
 
     def recoloring_picture(self):
-        print(1)
         if self.name != 'init.jpg':
             pixels = self.im.load()
             for i in range(self.x):
