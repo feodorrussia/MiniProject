@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa350ce-3ac1-426b-a700-34a712228688" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Минипроект Белоуса Фёдора.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photo_Editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Photo_Editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Минипроект Белоуса Фёдора.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/Минипроект Белоуса Фёдора.pptx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +16,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="166" column="27" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="27" />
               <folding>
+                <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#220#484#0" />
-                <element signature="e#552#691#0" />
+                <element signature="e#524#1441#0" />
               </folding>
             </state>
           </provider>
@@ -71,7 +72,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,6 +83,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,24 +292,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="166" column="27" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="27" />
           <folding>
+            <element signature="e#0#10#0" expanded="true" />
             <element signature="e#220#484#0" />
-            <element signature="e#524#1407#0" />
-            <element signature="e#552#691#0" />
-            <element signature="e#721#1369#0" />
-            <element signature="e#1468#6407#0" />
-            <element signature="e#1554#2252#0" />
-            <element signature="e#1464#1659#0" />
-            <element signature="e#1700#2309#0" />
-            <element signature="e#2342#2470#0" />
-            <element signature="e#2994#3311#0" />
-            <element signature="e#3152#3690#0" />
-            <element signature="e#3062#3382#0" />
-            <element signature="e#3413#3756#0" />
-            <element signature="e#3787#4347#0" />
-            <element signature="e#5874#6599#0" />
+            <element signature="e#524#1441#0" />
           </folding>
         </state>
       </provider>
