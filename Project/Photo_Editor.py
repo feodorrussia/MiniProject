@@ -36,7 +36,7 @@ class Photo_Editor(QMainWindow):
         self.btn_roted_r.clicked.connect(self.tools.roted_l)
         self.btn_sepia.clicked.connect(self.tools.sepia)
         self.btn_black.clicked.connect(self.tools.black)
-        self.btn_negativ.clicked.connect(self.tools.negative())
+        self.btn_negativ.clicked.connect(self.tools.negative)
         self.btn_frame.clicked.connect(self.tools.frame)
 
 
@@ -96,6 +96,12 @@ class Editor_tools:
                 self.name = i
                 self.x = x
                 self.y = y
+                self.old_proc_r = 100
+                self.old_proc_g = 100
+                self.old_proc_b = 100
+                self.base.proc_r_sp.setValue(100)
+                self.base.proc_g_sp.setValue(100)
+                self.base.proc_b_sp.setValue(100)
                 self.base.lbl.setPixmap(QPixmap(self.name))
 
     def roted_l(self):
