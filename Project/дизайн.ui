@@ -3390,6 +3390,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout_10">
          <item>
           <widget class="QSlider" name="proc_r_sl">
+           <property name="minimum">
+            <number>1</number>
+           </property>
            <property name="maximum">
             <number>100</number>
            </property>
@@ -3514,6 +3517,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout_11">
          <item>
           <widget class="QSlider" name="proc_g_sl">
+           <property name="minimum">
+            <number>1</number>
+           </property>
            <property name="maximum">
             <number>100</number>
            </property>
@@ -3638,6 +3644,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout_15">
          <item>
           <widget class="QSlider" name="proc_b_sl">
+           <property name="minimum">
+            <number>1</number>
+           </property>
            <property name="maximum">
             <number>100</number>
            </property>
