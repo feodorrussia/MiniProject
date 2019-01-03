@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa350ce-3ac1-426b-a700-34a712228688" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Минипроект Белоуса Фёдора текст.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Минипроект Белоуса Фёдора текст.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Минипроект Белоуса Фёдора.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/Минипроект Белоуса Фёдора.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makarov-Ivan(1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Makarov-Ivan(1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makarov-Ivan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Makarov-Ivan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/дизайн.ui" beforeDir="false" afterPath="$PROJECT_DIR$/дизайн.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/квадрат.png" beforeDir="false" afterPath="$PROJECT_DIR$/квадрат.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1535">
+            <state relative-caret-position="2335">
               <caret line="155" column="56" selection-start-line="155" selection-start-column="56" selection-end-line="155" selection-end-column="56" />
             </state>
           </provider>
@@ -55,7 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -67,6 +70,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +292,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Photo_Editor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1535">
+        <state relative-caret-position="2335">
           <caret line="155" column="56" selection-start-line="155" selection-start-column="56" selection-end-line="155" selection-end-column="56" />
         </state>
       </provider>
