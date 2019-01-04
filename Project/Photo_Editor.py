@@ -59,7 +59,7 @@ class Editor_tools:
         # спрашиваю имя копии
         i, okBtnPressed = QInputDialog.getText(self.base,
                                                "Введите название картинки",
-                                               "Копия")
+                                               "Копия вместе с форматом")
         if okBtnPressed:
             if not (os.path.isfile(i)):
                 if i == '':  # если не указано новое имя действую по умолчанию (+(copy_ind))
@@ -79,7 +79,7 @@ class Editor_tools:
         # спрашиваю имя новой картинки
         i, okBtnPressed = QInputDialog.getText(self.base,
                                                "Введите название картинки",
-                                               "Картинка")
+                                               "Картинка вместе с форматом")
         if okBtnPressed:
             # привожу значения по умолчанию
             self.copy_ind = 1
