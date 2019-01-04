@@ -24,8 +24,10 @@ class Photo_Editor(QMainWindow):
         super().__init__()
         # подключаю дизайн
         uic.loadUi('дизайн.ui', self)
+        self.max_w=1310
+        self.max_l=920
         # подключаю класс функций и заливаю основные параметры изображения
-        self.tools = Editor_tools('init.jpg', 900, 920, self)
+        self.tools = Editor_tools('init.jpg', self.max_w, self.max_l, self)
         # вывожу изначальную катринку
         self.lbl.setPixmap(QPixmap(self.tools.name))
         # подключаю кнопки к соответствующим функциям
@@ -100,11 +102,11 @@ class Editor_tools:
             x, y = self.im.size
             if 900 < x or 920 < y:  # проверка на корректность размеров картинки
                 self.error2 = Error(
-                    'Неверный размер картинки\nмаксимальный размер 900x920')
+                    'Неверный размер картинки\nмаксимальный размер 1310x920')
                 self.error2.show()  # вывод предупреждения
             else:
                 self.base.lbl.resize(x, y)  # изменяю поле для изображения
-                self.base.lbl.move(570 + 450 - x // 2,
+                self.base.lbl.move(570 + 650 - x // 2,
                                    490 - y // 2)  # преремещаю поле, чтобы новая картинка была посередине
                 # меняю параметры изображения
                 self.name = i  # имя
@@ -116,7 +118,7 @@ class Editor_tools:
         if self.name != 'init.jpg':  # проверка на начальную картинку
             if 900 < self.y or 920 < self.x:  # проверка на корректность размеров
                 self.error2 = Error(
-                    'Невозможно перевернуть картинку\nмаксимальный размер 900x920')
+                    'Невозможно перевернуть картинку\nмаксимальный размер 1310x920')
                 self.error2.show()  # вывод предупреждения
             else:
                 self.im.transpose(I.ROTATE_90).save(self.name)  # поворот картинки
@@ -126,7 +128,7 @@ class Editor_tools:
         if self.name != 'init.jpg':  # проверка на начальную картинку
             if 900 < self.y or 920 < self.x:  # проверка на корректность размеров
                 self.error2 = Error(
-                    'Невозможно перевернуть картинку\nмаксимальный размер 900x920')
+                    'Невозможно перевернуть картинку\nмаксимальный размер 1310x920')
                 self.error2.show()  # вывод предупреждения
             else:
                 self.im.transpose(I.ROTATE_270).save(self.name)  # поворот картинки
